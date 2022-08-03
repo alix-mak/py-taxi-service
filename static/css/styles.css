@@ -1,0 +1,88 @@
+body {
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.8) 0 100%), url(../images/background.png);
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+    font-size: 110%;
+}
+
+h1 {
+    font-size: 5.625rem;
+    font-family: Verdana, sans-serif;
+    color: darkcyan;
+    letter-spacing: 5px
+}
+h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: darkcyan;
+}
+h3 {
+    font-family: 'Merriweather Sans', sans-serif; "Verdana", sans-serif;
+    color: darkcyan;
+    text-align: center;
+    letter-spacing: 15px;
+    word-spacing: 10px;
+}
+table {
+    border: 10px;
+    margin-top: 60px;
+}
+
+a {
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a[href$=".exit"] {
+    background-image: url(../images/logout.png);
+}
+
+.sidebar-nav {
+    color: black;
+    padding: 30px 0 20px;
+    list-style: none;
+}
+.list-group-item {
+    background-color: rgba(255,255,255,0)
+}
+
+.page-link {
+  background: darkcyan;
+  color: white;
+    font-weight: initial;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+.description {
+    margin-top: 20px;
+    line-height: 10px;
+}
+
+.btn-info {
+    background-color: darkcyan;
+}
+
+.btn-info:hover {
+    background-color: cadetblue;
+}
+
+.btn-outline-info {
+    color: darkcyan;
+    border-color: darkcyan;
+}
+
+.btn-outline-info:hover {
+    background-color: darkcyan;
+}

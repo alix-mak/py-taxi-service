@@ -1,0 +1,31 @@
+<ul class="sidebar-nav">
+
+    {% if user.is_authenticated %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                User:
+                    <a href="{% url 'taxi:driver-detail' pk=user.id %}">
+                    {{ user.username }}</a>
+            <a style="float: right" class="btn btn-outline-info" href="{% url 'logout' %}" role="button">
+                Logout
+            </a>
+            </li>
+        </ul>
+    {% else %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a class="btn btn-info" href="{%  url 'login' %}" role="button">Login</a>
+            </li>
+        </ul>
+    {% endif %}
+
+    <br>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="{% url 'taxi:index' %}">🏠 Home</a> </li>
+        <li class="list-group-item"><a href="{%  url 'taxi:manufacturer-list' %}">Manufacturers</a> </li>
+        <li class="list-group-item"><a href="{% url 'taxi:car-list' %}">Cars</a> </li>
+        <li class="list-group-item"><a href="{% url 'taxi:driver-list' %}">Drivers</a> </li>
+    </ul>
+
+</ul>

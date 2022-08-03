@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Taxi Service Home</h1>
+    <h3><i>Welcome! Let's go for a ride with the wind!</i></h3>
+    <hr>
+    <h2>You will find there:</h2>
+    <ul>
+        <li style="list-style: None">🚘 {{ num_cars }} cars</li>
+        <li style="list-style: None">👨‍🚀 {{ num_drivers }} drivers</li>
+        <li style="list-style: None">🏭 {{ num_manufacturers }} manufacturers</li>
+    </ul>
+    <br>
+    <p>You've visited this page {{ num_visits }} time{{ num_visits|pluralize }}</p>
+{% endblock %}
