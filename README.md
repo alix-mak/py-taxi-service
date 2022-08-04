@@ -4,13 +4,13 @@ Django project for managing Taxi Service
 
 ## Check it out!
 
-[Taxi service project deployed to Heroku](...)
+[Taxi service project deployed to Heroku](https://taxi-service-alix.herokuapp.com/)
 
 ## Installation
 
 Python3 must be already installed
 ```shell
-git clone https://github.com/liuda-chuzdiuk/taxi-service.git
+git clone https://github.com/alix-mak/py-taxi-service
 python3 -m venv venv
 source venv/bin/activate (on macOS) & venv\Scripts\activate (on Windows)
 pip install -r requirements.txt
